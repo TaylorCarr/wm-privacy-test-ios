@@ -1,0 +1,1 @@
+../../../mopub-ios-sdk/MoPubSDK/Internal/Viewability/MPViewabilityObstruction.h

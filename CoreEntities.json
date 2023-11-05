@@ -1,0 +1,198 @@
+{
+  "type": "object",
+  "properties": {
+    "DataElements": {
+      "type": "array",
+      "example": [
+        "First Name",
+        "Last Name",
+        "Address"
+      ]
+    },
+    "Description": {
+      "type": "string",
+      "example": "Collecting data for Marketing and Promotion Purposes",
+      "description": "Description of the Collection Point"
+    },
+    "Id": {
+      "type": "string",
+      "format": "uuid",
+      "example": "25d9ccac-db88-4d34-849c-3d602a629961",
+      "description": "Unique Identifier of the Collection Point"
+    },
+    "Name": {
+      "type": "string",
+      "example": "Web Form Collection Point",
+      "description": "Name of the Collection Point"
+    },
+    "Purposes": {
+      "type": "array",
+      "description": "The list of Purposes associated with the Collection Point",
+      "items": {
+        "type": "object",
+	"properties": {
+          "CustomPreferences": {
+            "type": "array",
+            "description": "A list of the Purpose's Custom Preferences",
+            "items": {
+              "type": "object",
+              "title": "PurposeCustomPreferenceDto",
+              "properties": {
+                "CustomPreferenceOptions": { }
+              }
+            }
+          },
+          "Description": { },
+          "Id": { },
+          "Label": { }
+        }
+      }
+    },
+    "SubjectIdentifier": {
+      "type": "string",
+      "example": "Email",
+      "description": "The Data Subject identifier of the Collection Point"
+    }
+  }
+}
+
+
+{
+  "moc": "API",
+  "sub": "wmukid",
+  "identifier": "8**********************************8",
+  "iss": null,
+  "language": null,
+  "processVersion": 11,
+  "allowNotGivenConsents": false,
+  "notices": [ ],
+  "authenticationRequired": false,
+  "isAnonymous": false,
+  "processId": "f9686bed-3dc9-4137-8994-04f8bf37706d",
+  "purposes": [
+    {
+      "Id": "3f11c10e-aa84-4327-9f29-748e5a937a5b",
+      "Version": 2,
+      "Preferences": [ ],
+      "CustomPreferences": [
+        {
+          "Id": "b0150530-7feb-4ef2-8f81-584288ce5c0c",
+          "Options": [
+            "77422300-81dd-46b7-8c25-16cf99ba1ed4"
+          ]
+        }
+      ],
+      "TransactionType": null
+    }
+  ],
+  "dsDataElements": [
+    "Email",
+    "Name"
+  ],
+  "doubleOptIn": false,
+  "tenantId": "45a0c3da-9da6-4357-bb17-d4c4909115a1",
+  "consentType": "CONDITIONALTRIGGER",
+  "iat": "2020-08-03T20:03:16.361433",
+  "customPayload": null,
+  "otJwtVersion": 1,
+  "jti": "0598b117-4f80-46df-8a9f-f1caf5c56835",
+  "policy_uri": null
+}
+
+
+
+{
+  "type": "object",
+  "properties": {
+    "dataElements": {
+      "type": "object",
+      "example": {
+        "Title": "Mr",
+        "FirstName": "Example"
+      },
+      "description": "The list data elements and its corresponding value of the Data Subject",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "id": {
+      "type": "string",
+      "format": "uuid",
+      "example": "633ba071-61b0-485f-81a0-a2245777b432",
+      "description": "Unique Identifier identifying a Data Subject"
+    },
+    "identifier": {
+      "type": "string",
+      "example": "example@otprivacy.com",
+      "description": "The Data Subject identifier value"
+    },
+    "identifierType": {
+      "type": "string",
+      "example": "Email",
+      "description": "The identifier type of the Data Subject"
+    },
+    "language": {
+      "type": "string",
+      "example": "en-us",
+      "description": "The preferred language for the Data Subject"
+    }
+  }
+}
+
+
+
+{
+  "type": "object",
+  "properties": {
+    "consentLifeSpan": {
+      "type": "integer",
+      "format": "int64",
+      "example": 7889238,
+      "description": "The lifespan of consents recorded against this purpose version in seconds"
+    },
+    "customPreferences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "title": "PurposeCustomPreferenceDtoV2",
+        "properties": {
+          "customPreferenceOptions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "title": "CustomPreferenceOptionDtoV2",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "example": "ca0fc41b-b28a-4335-804c-44d1f0f782ed",
+                  "description": "Unique identifier identifying an Option"
+                },
+                "label": {
+                  "type": "string",
+                  "example": "Weekly",
+                  "description": "The Option label"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "description": {
+      "type": "string",
+      "example": "Collect customer emails for marketing purposes",
+      "description": "Description of the Purpose version"
+    },
+    "id": {
+      "type": "string",
+      "format": "uuid",
+      "example": "f2229953-b4b5-4042-8cb9-b78038cc4c46",
+      "description": "Unique Identifier of the Purpose"
+    },
+    "label": {
+      "type": "string",
+      "example": "Marketing Communications",
+      "description": "Name of the Purpose version"
+    }
+  }
+}

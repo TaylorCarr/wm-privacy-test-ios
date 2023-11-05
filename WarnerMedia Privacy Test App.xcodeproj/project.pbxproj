@@ -1,0 +1,995 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8FEC87417157A6973ACC729A /* libPods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 079FFDE93FB43A1CA3D9787F /* libPods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests.a */; };
+		9638F8F62410277200BEE9A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638F8F52410277200BEE9A0 /* AppDelegate.swift */; };
+		9638F8F82410277200BEE9A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638F8F72410277200BEE9A0 /* SceneDelegate.swift */; };
+		9638F8FA2410277200BEE9A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638F8F92410277200BEE9A0 /* ContentView.swift */; };
+		9638F8FC2410277600BEE9A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9638F8FB2410277600BEE9A0 /* Assets.xcassets */; };
+		9638F8FF2410277600BEE9A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9638F8FE2410277600BEE9A0 /* Preview Assets.xcassets */; };
+		9638F9022410277600BEE9A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9638F9002410277600BEE9A0 /* LaunchScreen.storyboard */; };
+		9638F90D2410277600BEE9A0 /* WarnerMedia_Privacy_Test_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638F90C2410277600BEE9A0 /* WarnerMedia_Privacy_Test_AppTests.swift */; };
+		9638F9182410277600BEE9A0 /* WarnerMedia_Privacy_Test_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638F9172410277600BEE9A0 /* WarnerMedia_Privacy_Test_AppUITests.swift */; };
+		963B81A026153AD7001533AA /* LanguageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963B819F26153AD7001533AA /* LanguageMenu.swift */; };
+		9642E7632469D4C200BC8CDB /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9642E7622469D4C200BC8CDB /* ActivityIndicator.swift */; };
+		9642E7652469E57F00BC8CDB /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9642E7642469E57F00BC8CDB /* LaunchScreen.swift */; };
+		9645F341244A532500AF9218 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9645F340244A532500AF9218 /* Settings.swift */; };
+		9645F343244A536400AF9218 /* HomeTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9645F342244A536400AF9218 /* HomeTab.swift */; };
+		9645F345244A548700AF9218 /* LocalTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9645F344244A548700AF9218 /* LocalTab.swift */; };
+		9645F347244A550100AF9218 /* Geolocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9645F346244A550100AF9218 /* Geolocator.swift */; };
+		9645F349244A5B7600AF9218 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9645F348244A5B7600AF9218 /* Network.swift */; };
+		9656E76E26273BB300B9FEB4 /* ClearSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9656E76D26273BB300B9FEB4 /* ClearSheet.swift */; };
+		9678F4FB2425441D008A7D9E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9678F4F82425441D008A7D9E /* GoogleService-Info.plist */; };
+		96844BAC250029B70028EA72 /* ProxyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96844BAB250029B70028EA72 /* ProxyAPI.swift */; };
+		96926482261D268600FB96C0 /* OneTrustBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96926481261D268600FB96C0 /* OneTrustBannerView.swift */; };
+		96ADBDBC245C9C29002752FC /* OTNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ADBDBB245C9C29002752FC /* OTNetwork.swift */; };
+		96BB0D9B24575131003E31A3 /* OneTrustViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BB0D9A24575131003E31A3 /* OneTrustViewController.swift */; };
+		96C33FA3266804000080E7DB /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C33FA2266804000080E7DB /* Helper.swift */; };
+		96DFE8FA2461FE9E0042FE7D /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DFE8F92461FE9E0042FE7D /* SplashScreen.swift */; };
+		ADFF003D2D71C23396B5F590 /* libPods-WarnerMedia Privacy Test AppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B08D52F90A7C9B456F7C763D /* libPods-WarnerMedia Privacy Test AppTests.a */; };
+		CA32D685270B8281006CD9B0 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA32D684270B8281006CD9B0 /* Globals.swift */; };
+		CA8ED50F2938459A004DE67F /* OTPublishersHeadlessSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA74502526AB7BE100805246 /* OTPublishersHeadlessSDK.xcframework */; };
+		CA8ED5102938459A004DE67F /* OTPublishersHeadlessSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA74502526AB7BE100805246 /* OTPublishersHeadlessSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DD453D867B93BE5BABAB0741 /* libPods-WarnerMedia Privacy Test App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E77899998980932AB3E385 /* libPods-WarnerMedia Privacy Test App.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9638F9092410277600BEE9A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9638F8EA2410277200BEE9A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9638F8F12410277200BEE9A0;
+			remoteInfo = "WarnerMedia Privacy Test App";
+		};
+		9638F9142410277600BEE9A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9638F8EA2410277200BEE9A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9638F8F12410277200BEE9A0;
+			remoteInfo = "WarnerMedia Privacy Test App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CA8ED5112938459A004DE67F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CA8ED5102938459A004DE67F /* OTPublishersHeadlessSDK.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		079FFDE93FB43A1CA3D9787F /* libPods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08B063814D6FC89D56224D1B /* Pods-WarnerMedia Privacy Test App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WarnerMedia Privacy Test App.debug.xcconfig"; path = "Target Support Files/Pods-WarnerMedia Privacy Test App/Pods-WarnerMedia Privacy Test App.debug.xcconfig"; sourceTree = "<group>"; };
+		4E6E8A761019EBD4470912DF /* Pods-WarnerMedia Privacy Test AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WarnerMedia Privacy Test AppTests.debug.xcconfig"; path = "Target Support Files/Pods-WarnerMedia Privacy Test AppTests/Pods-WarnerMedia Privacy Test AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		66C0FF0A94B5F5AB229EB3B1 /* Pods-WarnerMedia Privacy Test App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WarnerMedia Privacy Test App.release.xcconfig"; path = "Target Support Files/Pods-WarnerMedia Privacy Test App/Pods-WarnerMedia Privacy Test App.release.xcconfig"; sourceTree = "<group>"; };
+		9638F8F22410277200BEE9A0 /* WarnerMedia Privacy Test App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WarnerMedia Privacy Test App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9638F8F52410277200BEE9A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9638F8F72410277200BEE9A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9638F8F92410277200BEE9A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9638F8FB2410277600BEE9A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9638F8FE2410277600BEE9A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9638F9012410277600BEE9A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9638F9032410277600BEE9A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9638F9082410277600BEE9A0 /* WarnerMedia Privacy Test AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WarnerMedia Privacy Test AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9638F90C2410277600BEE9A0 /* WarnerMedia_Privacy_Test_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarnerMedia_Privacy_Test_AppTests.swift; sourceTree = "<group>"; };
+		9638F90E2410277600BEE9A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9638F9132410277600BEE9A0 /* WarnerMedia Privacy Test AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WarnerMedia Privacy Test AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9638F9172410277600BEE9A0 /* WarnerMedia_Privacy_Test_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarnerMedia_Privacy_Test_AppUITests.swift; sourceTree = "<group>"; };
+		9638F9192410277600BEE9A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9638F9D424104FC100BEE9A0 /* WMPrivacy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WMPrivacy-Bridging-Header.h"; sourceTree = "<group>"; };
+		963B819F26153AD7001533AA /* LanguageMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageMenu.swift; sourceTree = "<group>"; };
+		9642E7622469D4C200BC8CDB /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		9642E7642469E57F00BC8CDB /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		9645F340244A532500AF9218 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		9645F342244A536400AF9218 /* HomeTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTab.swift; sourceTree = "<group>"; };
+		9645F344244A548700AF9218 /* LocalTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalTab.swift; sourceTree = "<group>"; };
+		9645F346244A550100AF9218 /* Geolocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geolocator.swift; sourceTree = "<group>"; };
+		9645F348244A5B7600AF9218 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		9656E76D26273BB300B9FEB4 /* ClearSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearSheet.swift; sourceTree = "<group>"; };
+		9678F4F82425441D008A7D9E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		96844BAB250029B70028EA72 /* ProxyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyAPI.swift; sourceTree = "<group>"; };
+		96926481261D268600FB96C0 /* OneTrustBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTrustBannerView.swift; sourceTree = "<group>"; };
+		96ADBDBB245C9C29002752FC /* OTNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTNetwork.swift; sourceTree = "<group>"; };
+		96B44E69265DA5EC00AA66C9 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		96B44E6B265DA5F400AA66C9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		96B44E6D265DA5FE00AA66C9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		96B44E6F265DA60600AA66C9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		96B44E71265DA60F00AA66C9 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		96B44E73265DA61900AA66C9 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		96B44E75265DA62100AA66C9 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		96B44E77265DA62900AA66C9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		96B44E79265DA63300AA66C9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		96B44E7B265DA63A00AA66C9 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		96B44E7D265DA64400AA66C9 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		96BB0D9A24575131003E31A3 /* OneTrustViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTrustViewController.swift; sourceTree = "<group>"; };
+		96C33FA2266804000080E7DB /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		96DFE8F92461FE9E0042FE7D /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		9E7264FD9C72821E8FAA3060 /* Pods-WarnerMedia Privacy Test AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WarnerMedia Privacy Test AppTests.release.xcconfig"; path = "Target Support Files/Pods-WarnerMedia Privacy Test AppTests/Pods-WarnerMedia Privacy Test AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		B08D52F90A7C9B456F7C763D /* libPods-WarnerMedia Privacy Test AppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WarnerMedia Privacy Test AppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8E77899998980932AB3E385 /* libPods-WarnerMedia Privacy Test App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WarnerMedia Privacy Test App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA32D684270B8281006CD9B0 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		CA49733C28EE30CB00FBDADB /* OTPublishersHeadlessSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OTPublishersHeadlessSDK.xcframework; path = "../../../Downloads/publishers-native-ios-sdk-202209-2/OTPublishersHeadlessSDK-XCFramework/OTPublishersHeadlessSDK.xcframework"; sourceTree = "<group>"; };
+		CA74502526AB7BE100805246 /* OTPublishersHeadlessSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OTPublishersHeadlessSDK.xcframework; path = Frameworks/OTPublishersHeadlessSDK.xcframework; sourceTree = "<group>"; };
+		E365161635E016ECB5491689 /* Pods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests/Pods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F52140301D902B7969C932C2 /* Pods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests.release.xcconfig"; path = "Target Support Files/Pods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests/Pods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9638F8EF2410277200BEE9A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD453D867B93BE5BABAB0741 /* libPods-WarnerMedia Privacy Test App.a in Frameworks */,
+				CA8ED50F2938459A004DE67F /* OTPublishersHeadlessSDK.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9638F9052410277600BEE9A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADFF003D2D71C23396B5F590 /* libPods-WarnerMedia Privacy Test AppTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9638F9102410277600BEE9A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FEC87417157A6973ACC729A /* libPods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66D094464DB78C7B112D4EA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08B063814D6FC89D56224D1B /* Pods-WarnerMedia Privacy Test App.debug.xcconfig */,
+				66C0FF0A94B5F5AB229EB3B1 /* Pods-WarnerMedia Privacy Test App.release.xcconfig */,
+				E365161635E016ECB5491689 /* Pods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests.debug.xcconfig */,
+				F52140301D902B7969C932C2 /* Pods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests.release.xcconfig */,
+				4E6E8A761019EBD4470912DF /* Pods-WarnerMedia Privacy Test AppTests.debug.xcconfig */,
+				9E7264FD9C72821E8FAA3060 /* Pods-WarnerMedia Privacy Test AppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9638021E2450A83D002460E4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9645F346244A550100AF9218 /* Geolocator.swift */,
+				9645F348244A5B7600AF9218 /* Network.swift */,
+				96844BAB250029B70028EA72 /* ProxyAPI.swift */,
+				96ADBDBB245C9C29002752FC /* OTNetwork.swift */,
+				96C33FA2266804000080E7DB /* Helper.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9638F8E92410277200BEE9A0 = {
+			isa = PBXGroup;
+			children = (
+				9638F9D424104FC100BEE9A0 /* WMPrivacy-Bridging-Header.h */,
+				9638F8F42410277200BEE9A0 /* WarnerMedia Privacy Test App */,
+				9638F90B2410277600BEE9A0 /* WarnerMedia Privacy Test AppTests */,
+				9638F9162410277600BEE9A0 /* WarnerMedia Privacy Test AppUITests */,
+				9638F8F32410277200BEE9A0 /* Products */,
+				9638F925241028D400BEE9A0 /* Frameworks */,
+				66D094464DB78C7B112D4EA6 /* Pods */,
+				967671D7254A2F1600C0D8A9 /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		9638F8F32410277200BEE9A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9638F8F22410277200BEE9A0 /* WarnerMedia Privacy Test App.app */,
+				9638F9082410277600BEE9A0 /* WarnerMedia Privacy Test AppTests.xctest */,
+				9638F9132410277600BEE9A0 /* WarnerMedia Privacy Test AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9638F8F42410277200BEE9A0 /* WarnerMedia Privacy Test App */ = {
+			isa = PBXGroup;
+			children = (
+				9638021E2450A83D002460E4 /* Services */,
+				9645F33C244A52F500AF9218 /* Views */,
+				9638F8F52410277200BEE9A0 /* AppDelegate.swift */,
+				9638F8F92410277200BEE9A0 /* ContentView.swift */,
+				CA32D684270B8281006CD9B0 /* Globals.swift */,
+				9638F8F72410277200BEE9A0 /* SceneDelegate.swift */,
+				9638F8FB2410277600BEE9A0 /* Assets.xcassets */,
+				9638F9002410277600BEE9A0 /* LaunchScreen.storyboard */,
+				9638F9032410277600BEE9A0 /* Info.plist */,
+				9678F4F82425441D008A7D9E /* GoogleService-Info.plist */,
+				9638F8FD2410277600BEE9A0 /* Preview Content */,
+			);
+			path = "WarnerMedia Privacy Test App";
+			sourceTree = "<group>";
+		};
+		9638F8FD2410277600BEE9A0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9638F8FE2410277600BEE9A0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9638F90B2410277600BEE9A0 /* WarnerMedia Privacy Test AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				9638F90C2410277600BEE9A0 /* WarnerMedia_Privacy_Test_AppTests.swift */,
+				9638F90E2410277600BEE9A0 /* Info.plist */,
+			);
+			path = "WarnerMedia Privacy Test AppTests";
+			sourceTree = "<group>";
+		};
+		9638F9162410277600BEE9A0 /* WarnerMedia Privacy Test AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9638F9172410277600BEE9A0 /* WarnerMedia_Privacy_Test_AppUITests.swift */,
+				9638F9192410277600BEE9A0 /* Info.plist */,
+			);
+			path = "WarnerMedia Privacy Test AppUITests";
+			sourceTree = "<group>";
+		};
+		9638F925241028D400BEE9A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA74502526AB7BE100805246 /* OTPublishersHeadlessSDK.xcframework */,
+				CA49733C28EE30CB00FBDADB /* OTPublishersHeadlessSDK.xcframework */,
+				96B44E7D265DA64400AA66C9 /* SafariServices.framework */,
+				96B44E7B265DA63A00AA66C9 /* JavaScriptCore.framework */,
+				96B44E79265DA63300AA66C9 /* QuartzCore.framework */,
+				96B44E77265DA62900AA66C9 /* StoreKit.framework */,
+				96B44E75265DA62100AA66C9 /* EventKitUI.framework */,
+				96B44E73265DA61900AA66C9 /* EventKit.framework */,
+				96B44E71265DA60F00AA66C9 /* MediaPlayer.framework */,
+				96B44E6F265DA60600AA66C9 /* CoreTelephony.framework */,
+				96B44E6D265DA5FE00AA66C9 /* SystemConfiguration.framework */,
+				96B44E6B265DA5F400AA66C9 /* CoreLocation.framework */,
+				96B44E69265DA5EC00AA66C9 /* AdSupport.framework */,
+				B8E77899998980932AB3E385 /* libPods-WarnerMedia Privacy Test App.a */,
+				079FFDE93FB43A1CA3D9787F /* libPods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests.a */,
+				B08D52F90A7C9B456F7C763D /* libPods-WarnerMedia Privacy Test AppTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9645F33C244A52F500AF9218 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9645F340244A532500AF9218 /* Settings.swift */,
+				9645F342244A536400AF9218 /* HomeTab.swift */,
+				9645F344244A548700AF9218 /* LocalTab.swift */,
+				96BB0D9A24575131003E31A3 /* OneTrustViewController.swift */,
+				96DFE8F92461FE9E0042FE7D /* SplashScreen.swift */,
+				9642E7622469D4C200BC8CDB /* ActivityIndicator.swift */,
+				9642E7642469E57F00BC8CDB /* LaunchScreen.swift */,
+				963B819F26153AD7001533AA /* LanguageMenu.swift */,
+				96926481261D268600FB96C0 /* OneTrustBannerView.swift */,
+				9656E76D26273BB300B9FEB4 /* ClearSheet.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		967671D7254A2F1600C0D8A9 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9638F8F12410277200BEE9A0 /* WarnerMedia Privacy Test App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9638F91C2410277600BEE9A0 /* Build configuration list for PBXNativeTarget "WarnerMedia Privacy Test App" */;
+			buildPhases = (
+				D56D3CB43E7B4FBD8397D2C5 /* [CP] Check Pods Manifest.lock */,
+				9638F8EE2410277200BEE9A0 /* Sources */,
+				9638F8EF2410277200BEE9A0 /* Frameworks */,
+				9638F8F02410277200BEE9A0 /* Resources */,
+				3CA8FD7A3931527F97B64879 /* [CP] Copy Pods Resources */,
+				993E101600EBF750072AF38D /* [CP] Embed Pods Frameworks */,
+				CA8ED5112938459A004DE67F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WarnerMedia Privacy Test App";
+			productName = "WarnerMedia Privacy Test App";
+			productReference = 9638F8F22410277200BEE9A0 /* WarnerMedia Privacy Test App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9638F9072410277600BEE9A0 /* WarnerMedia Privacy Test AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9638F91F2410277600BEE9A0 /* Build configuration list for PBXNativeTarget "WarnerMedia Privacy Test AppTests" */;
+			buildPhases = (
+				F6A137F5F07F91E72D9F1D92 /* [CP] Check Pods Manifest.lock */,
+				9638F9042410277600BEE9A0 /* Sources */,
+				9638F9052410277600BEE9A0 /* Frameworks */,
+				9638F9062410277600BEE9A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9638F90A2410277600BEE9A0 /* PBXTargetDependency */,
+			);
+			name = "WarnerMedia Privacy Test AppTests";
+			productName = "WarnerMedia Privacy Test AppTests";
+			productReference = 9638F9082410277600BEE9A0 /* WarnerMedia Privacy Test AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9638F9122410277600BEE9A0 /* WarnerMedia Privacy Test AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9638F9222410277600BEE9A0 /* Build configuration list for PBXNativeTarget "WarnerMedia Privacy Test AppUITests" */;
+			buildPhases = (
+				502738B1A7B0F0A1CE65AEFC /* [CP] Check Pods Manifest.lock */,
+				9638F90F2410277600BEE9A0 /* Sources */,
+				9638F9102410277600BEE9A0 /* Frameworks */,
+				9638F9112410277600BEE9A0 /* Resources */,
+				BBCA0217958B724A74DAC547 /* [CP] Copy Pods Resources */,
+				C634BF735D4ECD2FBEE35139 /* [CP] Embed Pods Frameworks */,
+				EF278F71BD4E9AFB8387DF5A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9638F9152410277600BEE9A0 /* PBXTargetDependency */,
+			);
+			name = "WarnerMedia Privacy Test AppUITests";
+			productName = "WarnerMedia Privacy Test AppUITests";
+			productReference = 9638F9132410277600BEE9A0 /* WarnerMedia Privacy Test AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9638F8EA2410277200BEE9A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1210;
+				ORGANIZATIONNAME = "T Carr";
+				TargetAttributes = {
+					9638F8F12410277200BEE9A0 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					9638F9072410277600BEE9A0 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 9638F8F12410277200BEE9A0;
+					};
+					9638F9122410277600BEE9A0 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 9638F8F12410277200BEE9A0;
+					};
+				};
+			};
+			buildConfigurationList = 9638F8ED2410277200BEE9A0 /* Build configuration list for PBXProject "WarnerMedia Privacy Test App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9638F8E92410277200BEE9A0;
+			productRefGroup = 9638F8F32410277200BEE9A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9638F8F12410277200BEE9A0 /* WarnerMedia Privacy Test App */,
+				9638F9072410277600BEE9A0 /* WarnerMedia Privacy Test AppTests */,
+				9638F9122410277600BEE9A0 /* WarnerMedia Privacy Test AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9638F8F02410277200BEE9A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9638F9022410277600BEE9A0 /* LaunchScreen.storyboard in Resources */,
+				9678F4FB2425441D008A7D9E /* GoogleService-Info.plist in Resources */,
+				9638F8FF2410277600BEE9A0 /* Preview Assets.xcassets in Resources */,
+				9638F8FC2410277600BEE9A0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9638F9062410277600BEE9A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9638F9112410277600BEE9A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CA8FD7A3931527F97B64879 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WarnerMedia Privacy Test App/Pods-WarnerMedia Privacy Test App-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WarnerMedia Privacy Test App/Pods-WarnerMedia Privacy Test App-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WarnerMedia Privacy Test App/Pods-WarnerMedia Privacy Test App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		502738B1A7B0F0A1CE65AEFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		993E101600EBF750072AF38D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WarnerMedia Privacy Test App/Pods-WarnerMedia Privacy Test App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WarnerMedia Privacy Test App/Pods-WarnerMedia Privacy Test App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WarnerMedia Privacy Test App/Pods-WarnerMedia Privacy Test App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBCA0217958B724A74DAC547 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests/Pods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests/Pods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests/Pods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C634BF735D4ECD2FBEE35139 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests/Pods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests/Pods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests/Pods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D56D3CB43E7B4FBD8397D2C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WarnerMedia Privacy Test App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF278F71BD4E9AFB8387DF5A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WarnerMedia Privacy Test App/Pods-WarnerMedia Privacy Test App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests/Pods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests/Pods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6A137F5F07F91E72D9F1D92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WarnerMedia Privacy Test AppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9638F8EE2410277200BEE9A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9642E7652469E57F00BC8CDB /* LaunchScreen.swift in Sources */,
+				9638F8F62410277200BEE9A0 /* AppDelegate.swift in Sources */,
+				9638F8F82410277200BEE9A0 /* SceneDelegate.swift in Sources */,
+				96844BAC250029B70028EA72 /* ProxyAPI.swift in Sources */,
+				9645F349244A5B7600AF9218 /* Network.swift in Sources */,
+				96C33FA3266804000080E7DB /* Helper.swift in Sources */,
+				CA32D685270B8281006CD9B0 /* Globals.swift in Sources */,
+				96ADBDBC245C9C29002752FC /* OTNetwork.swift in Sources */,
+				9642E7632469D4C200BC8CDB /* ActivityIndicator.swift in Sources */,
+				9645F341244A532500AF9218 /* Settings.swift in Sources */,
+				96926482261D268600FB96C0 /* OneTrustBannerView.swift in Sources */,
+				9645F343244A536400AF9218 /* HomeTab.swift in Sources */,
+				9656E76E26273BB300B9FEB4 /* ClearSheet.swift in Sources */,
+				96DFE8FA2461FE9E0042FE7D /* SplashScreen.swift in Sources */,
+				963B81A026153AD7001533AA /* LanguageMenu.swift in Sources */,
+				9638F8FA2410277200BEE9A0 /* ContentView.swift in Sources */,
+				9645F345244A548700AF9218 /* LocalTab.swift in Sources */,
+				96BB0D9B24575131003E31A3 /* OneTrustViewController.swift in Sources */,
+				9645F347244A550100AF9218 /* Geolocator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9638F9042410277600BEE9A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9638F90D2410277600BEE9A0 /* WarnerMedia_Privacy_Test_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9638F90F2410277600BEE9A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9638F9182410277600BEE9A0 /* WarnerMedia_Privacy_Test_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9638F90A2410277600BEE9A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9638F8F12410277200BEE9A0 /* WarnerMedia Privacy Test App */;
+			targetProxy = 9638F9092410277600BEE9A0 /* PBXContainerItemProxy */;
+		};
+		9638F9152410277600BEE9A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9638F8F12410277200BEE9A0 /* WarnerMedia Privacy Test App */;
+			targetProxy = 9638F9142410277600BEE9A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9638F9002410277600BEE9A0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9638F9012410277600BEE9A0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9638F91A2410277600BEE9A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Ad Hoc Code Sign";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "WMPrivacy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9638F91B2410277600BEE9A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Ad Hoc Code Sign";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "WMPrivacy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9638F91D2410277600BEE9A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08B063814D6FC89D56224D1B /* Pods-WarnerMedia Privacy Test App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WarnerMedia Privacy Test App/Preview Content\"";
+				DEVELOPMENT_TEAM = 8AAJD88ULY;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"$(PROJECT_DIR)/Frameworks/**",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Pods/AmazonAd/AmazonMobileAds-ios-3.1.0-SDK",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_CONFIGURATION_BUILD_DIR}/**",
+					"$(PROJECT_DIR)/Frameworks/**",
+				);
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"${PODS_CONFIGURATION_BUILD_DIR}/**",
+					"$(PROJECT_DIR)/Frameworks/**",
+				);
+				INFOPLIST_FILE = "WarnerMedia Privacy Test App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MARKETING_VERSION = 2.8.4;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.warnermedia.privacy-test-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "WMPrivacy-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = NO;
+			};
+			name = Debug;
+		};
+		9638F91E2410277600BEE9A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66C0FF0A94B5F5AB229EB3B1 /* Pods-WarnerMedia Privacy Test App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WarnerMedia Privacy Test App/Preview Content\"";
+				DEVELOPMENT_TEAM = 8AAJD88ULY;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"$(PROJECT_DIR)/Frameworks/**",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Pods/AmazonAd/AmazonMobileAds-ios-3.1.0-SDK",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_CONFIGURATION_BUILD_DIR}/**",
+					"$(PROJECT_DIR)/Frameworks/**",
+				);
+				INFOPLIST_FILE = "WarnerMedia Privacy Test App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MARKETING_VERSION = 2.8.4;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.warnermedia.privacy-test-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "WMPrivacy-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = NO;
+			};
+			name = Release;
+		};
+		9638F9202410277600BEE9A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E6E8A761019EBD4470912DF /* Pods-WarnerMedia Privacy Test AppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N7B25F7NJ8;
+				INFOPLIST_FILE = "WarnerMedia Privacy Test AppTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.warnermedia.WarnerMedia-Privacy-Test-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WarnerMedia Privacy Test App.app/WarnerMedia Privacy Test App";
+			};
+			name = Debug;
+		};
+		9638F9212410277600BEE9A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E7264FD9C72821E8FAA3060 /* Pods-WarnerMedia Privacy Test AppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N7B25F7NJ8;
+				INFOPLIST_FILE = "WarnerMedia Privacy Test AppTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.warnermedia.WarnerMedia-Privacy-Test-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WarnerMedia Privacy Test App.app/WarnerMedia Privacy Test App";
+			};
+			name = Release;
+		};
+		9638F9232410277600BEE9A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E365161635E016ECB5491689 /* Pods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N7B25F7NJ8;
+				INFOPLIST_FILE = "WarnerMedia Privacy Test AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.warnermedia.WarnerMedia-Privacy-Test-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "WarnerMedia Privacy Test App";
+			};
+			name = Debug;
+		};
+		9638F9242410277600BEE9A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F52140301D902B7969C932C2 /* Pods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N7B25F7NJ8;
+				INFOPLIST_FILE = "WarnerMedia Privacy Test AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.warnermedia.WarnerMedia-Privacy-Test-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "WarnerMedia Privacy Test App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9638F8ED2410277200BEE9A0 /* Build configuration list for PBXProject "WarnerMedia Privacy Test App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9638F91A2410277600BEE9A0 /* Debug */,
+				9638F91B2410277600BEE9A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9638F91C2410277600BEE9A0 /* Build configuration list for PBXNativeTarget "WarnerMedia Privacy Test App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9638F91D2410277600BEE9A0 /* Debug */,
+				9638F91E2410277600BEE9A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9638F91F2410277600BEE9A0 /* Build configuration list for PBXNativeTarget "WarnerMedia Privacy Test AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9638F9202410277600BEE9A0 /* Debug */,
+				9638F9212410277600BEE9A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9638F9222410277600BEE9A0 /* Build configuration list for PBXNativeTarget "WarnerMedia Privacy Test AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9638F9232410277600BEE9A0 /* Debug */,
+				9638F9242410277600BEE9A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9638F8EA2410277200BEE9A0 /* Project object */;
+}

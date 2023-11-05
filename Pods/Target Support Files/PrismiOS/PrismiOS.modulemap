@@ -1,0 +1,6 @@
+module PrismiOS {
+  umbrella header "PrismiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

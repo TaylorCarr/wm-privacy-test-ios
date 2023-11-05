@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "FeatureFlagging",
+        "repositoryURL": "git@github.com:turnercode/prism-feature-flagging-ios.git",
+        "state": {
+          "branch": null,
+          "revision": "7c90b134f341a1eb56d558c51fe06f60ac76adf7",
+          "version": "1.0.1"
+        }
+      },
+      {
+        "package": "PrismiOS",
+        "repositoryURL": "https://github.com/turnercode/prism-ios.git",
+        "state": {
+          "branch": "master",
+          "revision": "4fef83986930bba0d4847c5ae39ddb4e53a4dcf4",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

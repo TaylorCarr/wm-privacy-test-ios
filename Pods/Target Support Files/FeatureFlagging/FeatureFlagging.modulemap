@@ -1,0 +1,6 @@
+module FeatureFlagging {
+  umbrella header "FeatureFlagging-umbrella.h"
+
+  export *
+  module * { export * }
+}

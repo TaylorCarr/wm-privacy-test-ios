@@ -1,0 +1,6 @@
+module Pods_WarnerMedia_Privacy_Test_App_WarnerMedia_Privacy_Test_AppUITests {
+  umbrella header "Pods-WarnerMedia Privacy Test App-WarnerMedia Privacy Test AppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

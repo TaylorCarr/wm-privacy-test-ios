@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>GADEnableNetworkTracing</key>
+	<string>YES</string>
+	<key>CLIENT_ID</key>
+	<string>45856774919-1mvkmn26tcev576bau4dqeib7ervomf1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.45856774919-1mvkmn26tcev576bau4dqeib7ervomf1</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB_ROWRi-fM1rNVuDoUh2ueoMb8OeeGJTQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>45856774919</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.warnermedia.Privacy-Test-App</string>
+	<key>PROJECT_ID</key>
+	<string>warnermedia-privacy-test-app</string>
+	<key>STORAGE_BUCKET</key>
+	<string>warnermedia-privacy-test-app.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:45856774919:ios:e7413ef3aa74f0ff8203a2</string>
+	<key>DATABASE_URL</key>
+	<string>https://warnermedia-privacy-test-app.firebaseio.com</string>
+	<key>ADMOB_APP_ID</key>
+	<string>ca-app-pub-7888296544691661~5917453508</string>
+</dict>
+</plist>
